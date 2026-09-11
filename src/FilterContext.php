@@ -10,5 +10,6 @@ final readonly class FilterContext
     public function __construct(
         public string $parameter,
         public array $input,
+        public ?string $operator = null,
     ) {}
 }

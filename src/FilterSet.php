@@ -38,7 +38,7 @@ final readonly class FilterSet
             $query = $filter->apply(
                 $query,
                 $input->value($parameter),
-                new FilterContext($parameter, $input->all()),
+                new FilterContext($parameter, $input->all(), $input->operator($parameter)),
             );
         }
 

@@ -35,6 +35,7 @@ abstract class TestCase extends Orchestra
             $table->string('location')->nullable();
             $table->boolean('active')->default(false);
             $table->date('published_at')->nullable();
+            $table->integer('priority')->nullable();
         });
     }
 }
